@@ -42,7 +42,7 @@ swagger = Swagger(app, template=swagger_template, config=swagger_config)
 
 
 # Load total_data
-with open('lstm/resources/total_data.pickle', 'rb') as fp:
+with open('API Documentation/lstm/resources/total_data.pickle', 'rb') as fp:
     total_data = pickle.load(fp)
 
 max_features = 100000
@@ -51,14 +51,14 @@ tokenizer = Tokenizer(num_words=max_features, split=' ', lower=True)
 tokenizer.fit_on_texts(total_data)
 
 #LSTM
-file = open("lstm/resources/x_pad_sequences.pickle", "rb")
+file = open("API Documentation/lstm/resources/x_pad_sequences.pickle", "rb")
 feature_file_from_lstm = pickle.load(file)
 file.close()
-model_file_from_lstm = load_model("lstm/model/model.h5")
+model_file_from_lstm = load_model("API Documentation/lstm/model/model.h5")
 
 #NN
-count_vect = pickle.load(open("nn/resources/feature.p","rb"))
-model_NN = pickle.load(open("nn/model/model.p","rb"))
+count_vect = pickle.load(open("API Documentation/nn/resources/feature.p","rb"))
+model_NN = pickle.load(open("API Documentation/nn/model/model.p","rb"))
 
 @app.route('/', methods=['GET'])
 def root():
@@ -91,7 +91,7 @@ def text_processing():
 def nnCSV():
     original_file = request.files['file']
     filename = secure_filename(original_file.filename)
-    filepath = 'static/' + filename
+    filepath = 'API Documentation/static/' + filename
     original_file.save(filepath)
     
     df = pd.read_csv(filepath, header=0)
@@ -146,7 +146,7 @@ def lstm():
 def lstmCSV():
     original_file = request.files['file']
     filename = secure_filename(original_file.filename)
-    filepath = 'static/' + filename
+    filepath = 'API Documentation/static/' + filename
     original_file.save(filepath)
     
     df = pd.read_csv(filepath, header=0)
