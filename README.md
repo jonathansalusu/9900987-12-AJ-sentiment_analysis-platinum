@@ -15,8 +15,8 @@ This repository contain few files:
 
 ## How to Run API Documentation
 Note: LSTM & NN model will available in separate link due to file size is bigger than 25 mb.
-1. Get both LSTM & NN folder [here](https://drive.google.com/drive/folders/1EviE1ZquTxx-PJjYrbpdiWOQswubGygG?usp=sharing) then paste **LSTM & NN folder only** to /9900987-12-AJ-sentiment_analysis-platinum
-2. Run app.py (path: /9900987-12-AJ-sentiment_analysis-platinum/API Documentation)
+1. Get both LSTM & NN folder [here](https://drive.google.com/drive/folders/1EviE1ZquTxx-PJjYrbpdiWOQswubGygG?usp=sharing) then paste **LSTM & NN folder only** to /9900987-12-AJ-sentiment_analysis-platinum/API Documentation
+2. Run app.py inside its folder (path: /9900987-12-AJ-sentiment_analysis-platinum/API Documentation)
 3. Access http://127.0.0.1:5000/docs through your browser
 4. Done
 
