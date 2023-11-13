@@ -20,5 +20,7 @@ Note: LSTM & NN model will available in separate link due to file size is bigger
 3. Access http://127.0.0.1:5000/docs through your browser
 4. Done
 
+### Special credit to our incredible mentor, Mba Nilam Mufidah
+
 ### Feel free to contact the file owner through mail: jo.aprilio@gmail.com
 Thank you
