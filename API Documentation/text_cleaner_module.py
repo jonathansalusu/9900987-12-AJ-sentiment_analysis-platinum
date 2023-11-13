@@ -3,10 +3,10 @@ import regex as re
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 # Convert Filter File to Data Frame
-df_kamus_alay = pd.read_csv('filter/new_kamusalay.csv', encoding='latin-1', sep=',', names=['Alay', 'Normal'])
+df_kamus_alay = pd.read_csv('API Documentation/filter/new_kamusalay.csv', encoding='latin-1', sep=',', names=['Alay', 'Normal'])
 df_kamus_alay_dict = dict(zip(df_kamus_alay.iloc[:, 0], df_kamus_alay.iloc[:, 1]))
 
-df_stopwordbahasa = pd.read_csv('filter/stopwordbahasa.csv')
+df_stopwordbahasa = pd.read_csv('API Documentation/filter/stopwordbahasa.csv')
 
 # Load stopwords into a set for faster lookup
 stopwords = set(df_stopwordbahasa['stopword'])
