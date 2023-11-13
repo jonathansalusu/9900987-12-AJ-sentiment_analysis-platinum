@@ -1,7 +1,7 @@
 # Sentiment Analysis Repository
 This repository was created to fulfill the Binar Platinum Challenge Final Assignment.
 
-## Team Member:
+## Team Member
 1. Afdhah Nur Riadhoh
 2. Jonathan Aprilio Salusu
 
